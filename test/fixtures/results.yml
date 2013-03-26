@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  Standings: 1
+  Spirit: 9.99
+
+two:
+  Name: MyString
+  Standings: 1
+  Spirit: 9.99

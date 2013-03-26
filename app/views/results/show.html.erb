@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @result.Name %>
+</p>
+
+<p>
+  <b>Standings:</b>
+  <%= @result.Standings %>
+</p>
+
+<p>
+  <b>Spirit:</b>
+  <%= @result.Spirit %>
+</p>
+
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>
