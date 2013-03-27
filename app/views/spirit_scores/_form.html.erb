@@ -1,0 +1,37 @@
+<%= form_for(@spirit_score) do |f| %>
+  <% if @spirit_score.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spirit_score.errors.count, "error") %> prohibited this spirit_score from being saved:</h2>
+
+      <ul>
+      <% @spirit_score.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :TeamName %><br />
+    <%= f.text_field :TeamName %>
+  </div>
+  <div class="field">
+    <%= f.label :Spirit1 %><br />
+    <%= f.text_field :Spirit1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Spirit2 %><br />
+    <%= f.text_field :Spirit2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Spirit3 %><br />
+    <%= f.text_field :Spirit3 %>
+  </div>
+  <div class="field">
+    <%= f.label :Spirit4 %><br />
+    <%= f.text_field :Spirit4 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  TeamName: MyString
+  Spirit1: 9.99
+  Spirit2: 9.99
+  Spirit3: 9.99
+  Spirit4: 9.99
+
+two:
+  TeamName: MyString
+  Spirit1: 9.99
+  Spirit2: 9.99
+  Spirit3: 9.99
+  Spirit4: 9.99

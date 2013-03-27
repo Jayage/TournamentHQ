@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Teamname:</b>
+  <%= @spirit_score.TeamName %>
+</p>
+
+<p>
+  <b>Spirit1:</b>
+  <%= @spirit_score.Spirit1 %>
+</p>
+
+<p>
+  <b>Spirit2:</b>
+  <%= @spirit_score.Spirit2 %>
+</p>
+
+<p>
+  <b>Spirit3:</b>
+  <%= @spirit_score.Spirit3 %>
+</p>
+
+<p>
+  <b>Spirit4:</b>
+  <%= @spirit_score.Spirit4 %>
+</p>
+
+
+<%= link_to 'Edit', edit_spirit_score_path(@spirit_score) %> |
+<%= link_to 'Back', spirit_scores_path %>

@@ -1,4 +1,6 @@
 Tournament::Application.routes.draw do
+  resources :spirit_scores
+
   devise_for :users
 
   get "home/index"
