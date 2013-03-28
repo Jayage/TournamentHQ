@@ -25,6 +25,7 @@ class SpiritScoresController < ApplicationController
   # GET /spirit_scores/new.json
   def new
     @spirit_score = SpiritScore.new
+	average Spirit::avg(params[:spirit1])
 
     respond_to do |format|
       format.html # new.html.erb

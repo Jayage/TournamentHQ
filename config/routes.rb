@@ -1,34 +1,34 @@
 Tournament::Application.routes.draw do
-  resources :spirit_scores
+
+  
 
   devise_for :users
 
   get "home/index"
 
   get "site/home"
+  match '/home' =>'site#home'
 
   get "site/teams"
+  resources :teams
+  match '/teams' =>'site#teams'
 
   get "site/tournaments"
+  resources :competitions
+  match '/tournaments' => 'competitions#index'
 
   get "site/matches"
+  resources :matches
+  match '/matches' => 'site#matches'
 
   get "site/results"
-
   resources :results
+  match '/results' => 'site#results'
 
-  resources :matches
-
-  resources :competitions
-
-  resources :teams
-
-match '/home' =>'site#home'
-match '/teams' =>'site#teams'
-match '/tournaments' => 'competitions#index'
-match '/matches' => 'site#matches'
-match '/results' => 'site#results'
-match '/home' =>'site#home'
+  
+get "site/spirit"
+resources :spirit_scores
+match '/spirit'=>'spirit_scores#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
