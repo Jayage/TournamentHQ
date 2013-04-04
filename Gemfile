@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 
 # My own Gem
-gem 'spiritavg'
+gem 'welcome'
 
 # External Gems that work
 gem 'textcaptcha', '~> 0.0.2'

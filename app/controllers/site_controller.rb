@@ -1,4 +1,4 @@
 class SiteController < ApplicationController
-  def spirit
+  def welcome.hi
   end
 end
