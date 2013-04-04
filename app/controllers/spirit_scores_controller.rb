@@ -25,7 +25,6 @@ class SpiritScoresController < ApplicationController
   # GET /spirit_scores/new.json
   def new
     @spirit_score = SpiritScore.new
-	average Spirit::avg(params[:spirit1])
 
     respond_to do |format|
       format.html # new.html.erb
@@ -69,6 +68,16 @@ class SpiritScoresController < ApplicationController
       end
     end
   end
+  
+  # AVERAGE------------------------------------------- 
+#  def average
+ # @spirit_score = SpiritScore.find(params[:id])
+  #respond_to do |format|
+#end
+  
+  
+	
+	end
 
   # DELETE /spirit_scores/1
   # DELETE /spirit_scores/1.json

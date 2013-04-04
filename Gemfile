@@ -1,8 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+
+# My own Gem
+gem 'spiritavg'
+
+# External Gems that work
+gem 'textcaptcha', '~> 0.0.2'
+gem 'httparty', '~> 0.10.2'
 gem 'devise', '2.1.2'
-gem 'impressionist'
+
+
 
 
 # Bundle edge Rails instead:
